@@ -14,3 +14,7 @@ p{
 tr{
     background-color: rgb(233, 171, 148);
 }
+
+table{
+    margin: 0 auto; /*De esta manera centramos automaticamente la tabla horizontalmente*/
+}

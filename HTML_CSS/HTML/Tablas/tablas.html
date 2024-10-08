@@ -10,10 +10,11 @@
         <id="contenedor">
             <div class="Encabezado">
                 <h1>Tablas</h1>
-                <p>La etiqueta td permie crear celdas</p>
                 <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Tables/Basics">Link de referencia de contenido del desarrollo de la pagina</a>
             </div>
             <div class="celdas">
+                <h2>Celdas</h2>
+                <p>La etiqueta td permie crear celdas</p>
                 <p>Coloca las celdas una detra de la otra, de esta manera trabajando sobre una misma fila</p>
                 <table>
                     <td>Celda 1</td>
@@ -22,19 +23,40 @@
                 </table>
             </div>
             <div class="Filas y encabezado">
-                <p>La etiqueta 'tr' crea la final pero la etiqueta th crea las columnas de la fila</p>
+                <h2>Filas y encabezados</h2>
+                <p>La etiqueta 'tr' crea la final pero la etiqueta th crea las columnas de la fila. Ya que th es una etiqueta de encabezado. 
+                <br>Dentro de la misma fila se iran agregando las celdas que queramos que correspondan a esa fila</p>
                 <table>
-                    
+                   <tr>
+                    <th colspan="6">Encabezado de la tabla</th>
+                   </tr>
                     <tr>
-                        <th scope="col">Columna 1</th> 
+                        <th>Filas</th>
+                        <th>Columna 1</th> 
                         <th>Columna 2</th>
                         <th>Columna 3</th>
                         <th>Columna 4</th>
                         <th>Columna 5</th>
                     </tr>
+                    <tr>
+                        <td>fila 1</td>
+                        <td>fila 1 columa 2</td>
+                    </tr>
+                    <tr>
+                        <td>fila 2</td>
+                        <td>fila 2 columna 2</td>
+                    </tr>
+                    <tr>
+                        <td>fila 3</td>
+                        <td>fila 3 columna 2</td>
+                    </tr>
                 </table>
+                <p>El atributo utilizado en el encabezado de la tabla permite que sea tan largo como nostros deseemos. 
+                    Esto gracias al atributo 'colspan="numero_de_celdas(largo)"' de esta manera abarcamos todas las columnas
+                </p>
             </div>
             <div class="Filas, encabezados y celdas">
+                <h3>Filas, encabezados y celdas (tabla en diferente orden)</h3>
                 <p>Ahora vermeos como dentro de una fila creamos celdas, ya que no es lo mismo que crear las celdas que los encabezados. Aunque la etiqueta th y td hagan lo mismo, semanticamente son diferentes, th denota el encabezado mientras que la etiqueta td denota el contenido de una celda</p>
                 <table>
                     <tr>
@@ -45,7 +67,99 @@
                     </tr>
                     <tr>
                         <th>Fila 2</th>
+                        <td>Fila 2 celda 1</td>
+                        <td>Fila 2 celda 2</td>
                     </tr>
+                    <tr>
+                        <th>Fila 3</th>
+                        <td>Fila 3 celda 1</td>
+                        <td>Fila 3 celda 2</td>
+                    </tr>
+                    <tr>
+                        <th>Fila 4</th>
+                        <td>Fila 4 celda 1</td>
+                        <td>Fila 4 celda 2</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="Celdas+">
+                <h2>Celdas que abarcan mas de una fila y columna</h2>
+                <h3>Rowspan</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Animales</th>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <th>Hipopotamo</th>
+                        </tr>
+                        <tr>
+                            <th>Caballo</th>
+                            <td>Yegua</td>
+                        </tr>
+                        <tr>
+                            <th>Semental</th>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <th>Cocodrilo</th>
+                        </tr>
+                        <tr>
+                            <th>Pollo</th>
+                            <td>Gallina</td>
+                        </tr>
+                        <tr>
+                            <th>Gallo</th>
+                            <td
+                            ></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Como vemos, la celda de la fila 1 tambien abarca la fila dos, esto es gracias a la propiedad <strong>'rowspan="numeo de filas"'</strong> que nos permite abarcar mas de una fila, nosotros indicando cuantas filas hacia abajo queremos que abarque
+                </p>
+                <h3>Colspan</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th colspan="5">Titulo tabla</th>
+                        </tr>
+                        <tr>
+                            <td>Celda 1</td>
+                            <td>Celda 2</td>
+                            <td>Celda 3</td>
+                            <td>Celda 4</td>
+                            <td>Celda 5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    En este ejemplo, abarcamos mas de una columna con una sola fila, esto es agregando a la fila que queremos que abarque mas columnas el atributo <strong>colspan="numero de columnas"</strong>
+                </p>
+                </h3>
+            </div>
+
+            <div class="Ejemplo practico">
+                <h2>Ejemplo de tabla</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th id="libre"></th>
+                            <th>Nombre</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Planetas</th>
+                        </tr>
+                        <tr>
+                            <th>Planetas Jovianos</th>
+                        </tr>
+                        <tr>
+                            <th>Planetas enanos</th>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

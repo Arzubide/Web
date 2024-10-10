@@ -1,29 +1,22 @@
 #Contenedor{
-    padding: 0%;
-    border-top: 5px solid black;
+    padding: 2%;
+    border-top: 1px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
 
 }
-a{
-    padding: 10%;
+
+th{
+    
+    width: 1%;
+    border-left: 2px black solid;
+    
 }
 
-#Navegacion{
-    text-align: center;
-    padding: 5%;
-    border-top: 5px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-}
+menu{
+    padding: 1%;
+    background-color: lightseagreen;
+    border: 2px black solid;
 
-#Contenido{
-    text-align: center;
-
-    border-top: 5px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
 }

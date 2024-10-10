@@ -15,8 +15,11 @@ th{
 }
 
 menu{
+    margin: 0%;
     padding: 1%;
-    background-color: lightseagreen;
+    background-color: lightblue;
     border: 2px black solid;
 
 }
+
+*{margin: 0%;}

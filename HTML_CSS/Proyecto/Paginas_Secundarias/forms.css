@@ -1,3 +1,31 @@
 a{
-    color: blueviolet;
+     
+}
+
+th{
+    
+    width: 1%;
+    border-left: 2px black solid;
+    
+}
+
+menu{
+    padding: 1%;
+    background-color: lightseagreen;
+    border: 2px black solid;
+
+}
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+legend{
+    text-align: center;
+}
+
+input[type="submit"]{
+    margin: 1%;
+    padding: auto;
+    background-color: aqua;
 }

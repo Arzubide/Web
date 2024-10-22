@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Es importante para poder realizar los cambios para media query-->
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box; /*Evita el desbordamiento de los elementos en la pagina*/
+        }
+
+        .fila::after{
+            content: "";
+            clear: "both"; 
+            display: table;
+        }
+        h1{
+            text-align: center;
+        }
+
+        [class*='col-']{
+            float: left;
+            padding: 15px;
+        }
+
+        .contenedor{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media only screen and (min-width:600px){
+            body{
+                background-color: antiquewhite;
+            }
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 8.33%;}
+            .col-4{width: 8.33%;}
+            .col-5{width: 8.33%;}
+            .col-6{width: 50%;}
+            .col-7{width: 8.33%;}
+            .col-8{width: 8.33%;}
+            .col-9{width: 8.33%;}
+            .col-10{width: 91.66%;}
+            .col-11{width: 100%;}
+            .col-12{width: 100%;}
+        }
+        @media only screen and (max-width:599px){
+            body{
+                background-color: aqua;
+            }
+        }
+        /*Considerando que la pantalla es el 100% podemos ir configurando el porcentaje de cada una de las columnas*/
+
+    </style>
+
+</head>
+<body>
+    <div class="fila">
+        <h1>Cambio de columans con media q y grid</h1>
+        <div class="col-6">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, vero. Sunt, cum aut fugit mollitia nostrum voluptates! Quibusdam nesciunt dignissimos et dolores eius. Voluptatem, dolores atque numquam in explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repudiandae quaerat rem quisquam velit expedita, tempora, alias praesentium quae voluptate, cum minus laudantium tenetur deserunt odit accusamus perspiciatis exercitationem quibusdam?</p>
+        </div>
+        <div class="col-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero optio animi laborum quos minima, placeat, architecto ab exercitationem, repellendus cupiditate commodi recusandae pariatur natus ipsum tenetur! Eum, vitae fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum doloribus iure commodi, inventore eius provident eligendi velit molestias fugiat dolores itaque dolore dicta harum ullam dolor exercitationem? Provident, distinctio?</p>
+        </div>
+    </div>
+</body>
+</html>

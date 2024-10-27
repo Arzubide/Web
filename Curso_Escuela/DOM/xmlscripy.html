@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM XHML</title>
+</head>
+<body>
+    <p>El titulo del libro consultado a traves de DOM XML es:</p>
+    <p id="libro"></p>
+    <p id="libro2"></p>
+    <script>
+        var text, parse, xmlDOM;
+        text = '<libreria>'+
+        '<libro><titulo>Every Day Italian</titulo>'+'<autor>Giada Kundera</autor>' + 
+        '<fecha>2005</fecha></libro>' +
+        '<libro><titulo>EL monje que vendio su ferrari</titulo>'+'<autor>Anonimo</autor>' + 
+        '<fecha>2005</fecha></libro>' +
+        '</libreria>';
+
+        parse = new DOMParser();
+        xmlDOM = parse.parseFromString(text,"text/xml");
+        document.getElementById('libro').innerHTML = xmlDOM.getElementsByTagName('titulo')[0].childNodes[0].nodeValue;
+        document.getElementById('libro2').innerHTML = xmlDOM.getElementsByTagName('titulo')[1].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>

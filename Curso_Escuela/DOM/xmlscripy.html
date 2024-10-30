@@ -20,8 +20,16 @@
 
         parse = new DOMParser();
         xmlDOM = parse.parseFromString(text,"text/xml");
-        document.getElementById('libro').innerHTML = xmlDOM.getElementsByTagName('titulo')[0].childNodes[0].nodeValue;
-        document.getElementById('libro2').innerHTML = xmlDOM.getElementsByTagName('titulo')[1].childNodes[0].nodeValue;
+        // document.getElementById('libro').innerHTML = xmlDOM.getElementsByTagName('titulo')[0].childNodes[0].nodeValue;
+        // document.getElementById('libro2').innerHTML = xmlDOM.getElementsByTagName('titulo')[1].childNodes[0].nodeValue;
+
+        var x = xmlDOM.getElementsByTagName("titulo");
+        resultado = "";
+        for(i =0; i<x.length;i++){
+            resultado += x[i].childNodes[0].nodeValue + "<br>"; 
+        }
+        document.getElementById("libro").innerHTML = resultado;
+
     </script>
 </body>
 </html>

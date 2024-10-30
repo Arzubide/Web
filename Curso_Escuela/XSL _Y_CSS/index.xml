@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type"text/xsl" href="hola.xsl"?>
+
+<libreria>
+    <libro>
+        <titulo>El monje que vendio su ferrari</titulo>
+        <autor>Yo</autor>
+        <fecha año="2004"/>
+    </libro>
+</libreria>

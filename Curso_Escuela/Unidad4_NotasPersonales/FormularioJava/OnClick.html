@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function mensaje(){
+        alert("Fucnion")
+    }
+    
+    function Escribir(){
+        let Nombre = document.getElementById("nombre")
+        let Usuario = document.getElementById("usuario")
+        alert("hola " + Nombre.value + "\nTu usuario es: " + Usuario.value) /*Llamamos a la variable obteniendo el valor registrado en ese elemento id*/
+    }
+    
+    
+</script>
+<body>
+    <div style="text-align: center; padding: 20%;">
+        <form action="">
+            <label for="Nombre">Ingresa el nombre</label>
+            <input type="text" id="nombre"><br><br>
+            <label for="usuario">Ingresa el usuairio</label>
+            <input type="text" name="" id="usuario"><br><br>
+            <label for="contraseña">Ingresa la contraseña</label>
+            <input type="text" name="" id="contraseña"><br><br>
+            <input type="button"  value="Enviar" id="botonEnviar" onclick="alert('hola')">
+            <!--
+            Se utiliza el atributo onclick en el cuale dentro de las commilas se puede ingresa codigo java, se utiliza un alert para que muestre el mensaje
+            -->
+            <input type="button"  value="EnviarFuncion" id="botonEnviarFuncion" onclick="Escribir()">
+            <!--
+            El boton que se utiliza aqui es mediante una funcion
+            -->
+        </form>
+
+    </div>
+
+</body>
+</html>

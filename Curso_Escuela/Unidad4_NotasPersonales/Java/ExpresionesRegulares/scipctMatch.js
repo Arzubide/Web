@@ -7,3 +7,16 @@ function arroba(){
         document.forms.datos.resultado.value = "Tus datos son incorrectos, no contiene arroba"
     }
 }
+
+
+//Version con id's
+function arrobaa(){
+    let correoIngresado = document.getElementById("correo").value;
+    var arroba = correoIngresado.match(/@/);
+    if (arroba !== null) {
+        document.getElementById("resultado").value = "Tu correo tiene arroba";
+    }else{
+        document.getElementById("resultado").value = "Tu correo no tiene arroba";
+    }
+}
+

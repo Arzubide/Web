@@ -1,0 +1,34 @@
+<!-- 
+Usando el evento mauseover y mauseout  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        ig = new Image;
+        ig.src = "imagenes/mercedes.png";
+
+        ig2 = new Image;
+        ig2.src = "imagenes/porsche.png";
+
+        let i = 1;
+        function cambiaImagen(){
+            if (i == 1){
+                document.images['imagen'].src = ig.src;
+                i = 2;
+            }
+            else{
+                document.images['imagen'].src = ig2.src;
+                i = 1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p><img src="imagenes/porsche.png" id="imagen" width="25%" onmouseover="cambiaImagen()" onmouseout="cambiaImagen()"></p>
+</body>
+</html>

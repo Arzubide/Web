@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seleccion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<script src="../jquery-3.7.1.min.js"></script>
-<script> /*Dependiendo de que se seleccion se mostrará o no el label para inesertar el num de locker*/
-    $(document).ready(function(){
-        $("#locker").hide();
-        $("#renovacion").click(function(){
-            $("#locker").show();
-        });
-
-        $("#solicitud").click(function(){
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script> /*Dependiendo de que se seleccion se mostrará o no el label para inesertar el num de locker*/
+        $(document).ready(function(){
             $("#locker").hide();
+            $("#renovacion").click(function(){
+                $("#locker").show();
+            });
+    
+            $("#solicitud").click(function(){
+                $("#locker").hide();
+            });
         });
-    });
-</script>
-
+    </script>
+</head>
 
 <body>
     

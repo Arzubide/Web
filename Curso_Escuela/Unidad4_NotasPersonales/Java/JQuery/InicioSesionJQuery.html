@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="../jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#datos").click(function(){
+            var nombre = $("#nombre").val(); 
+            var edad = $("#edad").val(); 
+            var correo = $("#correo").val(); 
+            var contraseña = $("#contraseña").val(); 
+
+            alert("Tu nombre es: " + nombre + "\n" + "Tu edad es: " + edad + "\n" + "Tu correo es: " + correo + "\n" + "Tu contraseña es: " + contraseña);
+                $("#nombre").hide();
+                $("#lnombre").hide();
+                $("#mensaje").html("El ejercicio es correcto").css("color","red");
+        });
+    });
+</script>
+
+<body>
+    <div style="text-align: center; margin-top: 10%;">
+        <form>
+            <h1 id="mensaje"></h1>
+            <label id = "lnombre" for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad"><br><br>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo"><br><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña"><br><br>
+            <input type="button" value="Ver datos" id="datos">
+        </form>
+    </div>
+</body>
+</html>

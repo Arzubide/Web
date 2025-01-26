@@ -1,0 +1,38 @@
+#Contenedor{
+    margin-top: 35px; /*Agregamos este margin top para que el contenido no quede oculto del contenedor principal*/
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    display: flex; /*Se agrega para permitir que se alineen los elementos agregados dentro del contenedor principal*/
+    gap: 10px; /*Permite darle un espacio entre los divs*/
+}
+
+th{
+    width: 1%;
+    border-left: 1.5px solid black;
+}
+
+.menu{
+    /*Le damos el diseño al menu de la parte superior*/
+    position: fixed; /*El contenedor permite adaptarse a las medidas del contenido de dentro*/
+    top: 0;
+    left: 0;
+    padding: .5%;
+    background-color: rgb(213, 192, 167);
+    /*Se le agregara proximamente el disenio empleando */
+}
+
+.InformacionExtra{
+    padding: 2%;
+    width: 30%;
+}
+
+.Main{
+    padding: 2%;
+    width: 70%;
+}
+
+body{
+    background-color: rgb(247, 233, 199);
+}
